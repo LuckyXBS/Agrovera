@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166000335-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-166000335-1');
+  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Form | CodingNepal</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<style>
+    .download-btn-cn{
+      position: fixed;
+      bottom: 40px;
+      left: 40px;
+      z-index: 99999;
+    }
+    .download-btn-cn a{
+      background: none;
+      padding: 13px 22px;
+      font-size: 16px;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      border: 2px solid #fff;
+      font-family: 'Poppins', sans-serif;
+      transition: all 0.3s ease;
+    }
+    .download-btn-cn a:hover{
+        color: #0D6EFD;
+        background: #fff;
+    }
+    @media screen and (max-width: 600px){
+        .download-btn-cn{
+            left: 20px;
+        }
+        .download-btn-cn a{
+            font-size: 13px;
+            padding: 9px 15px;
+        }
+    }
+  </style>
+</head>
+<body>
+<div class="download-btn-cn">
+<a href="https://www.codingnepalweb.com/create-working-contact-form-in-php/" target="_blank">Download Code Files</a>
+</div>
+<div class="wrapper">
+<header>Send us a Message</header>
+<form action="#">
+<div class="dbl-field">
+<div class="field">
+<input type="text" name="name" placeholder="Enter your name">
+<i class='fas fa-user'></i>
+</div>
+<div class="field">
+<input type="text" name="email" placeholder="Enter your email">
+<i class='fas fa-envelope'></i>
+</div>
+</div>
+<div class="dbl-field">
+<div class="field">
+<input type="text" name="phone" placeholder="Enter your phone">
+<i class='fas fa-phone-alt'></i>
+</div>
+<div class="field">
+<input type="text" name="website" placeholder="Enter your website">
+<i class='fas fa-globe'></i>
+</div>
+</div>
+<div class="message">
+<textarea placeholder="Write your message" name="message"></textarea>
+<i class="material-icons">message</i>
+</div>
+<div class="button-area">
+<button type="submit">Send Message</button>
+<span></span>
+</div>
+</form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
