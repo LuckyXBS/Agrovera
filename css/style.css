@@ -335,7 +335,7 @@ section.dark .section-title::after{
 }
 
 .service:hover{
-  background-color: #084B8A;
+  background-color: #000;
 }
 
 .service:hover .icon{
@@ -463,7 +463,7 @@ section.dark .section-title::after{
 }
 
 .contact-info .item:hover{
-  background-color: #48dbfb;
+  background-color: #000;
 }
 
 .contact-form{
@@ -484,7 +484,7 @@ section.dark .section-title::after{
   color: #fff;
 }
 
-.nameZone, .emailZone{
+.nameZone, .emailZone, .whereZone, .whomZone{
   max-width: calc(50% - 10px);
 }
 
@@ -910,11 +910,11 @@ form .button-area{
   cursor: pointer;
   border-radius: 5px;
   padding: 13px 25px;
-  background: #0D6EFD;
+  background: #353b48;
   transition: background 0.3s ease;
 }
 .button-area button:hover{
-  background: #025ce3;
+  background: #353b48;
 }
 .button-area span{
   font-size: 17px;

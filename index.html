@@ -143,32 +143,16 @@
         </div>
       </div>
 
-      <div class="wrapper1">
- 
-    <form action="#">
-      <div class="dbl-field">
-        <div class="field">
-          <input type="text" name="name" placeholder="Введите ваше имя">
-        </div>
-        <div class="field">
-          <input type="text" name="email" placeholder="Введите вашу почту">
-        </div>
-      </div>
-	  <div class="dbl-field">
-        <div class="field">
-          <input type="text" name="where" placeholder="Откуда">
-        </div>
-        <div class="field">
-          <input type="text" name="whom" placeholder="Кому">
-        </div>
-      </div>
-      <div class="message">
-        <textarea placeholder="Дополнительнвя информация" name="message"></textarea>
-      </div>
-      <div class="button-area">
-        <button type="submit">Отправить сообщение</button>
-        <span></span>
-      </div>
+ <form action="https://formspree.io/vovab1544@gmail.com" method="post" class="contact-form">
+        <input type="text" class="nameZone" placeholder="Введите ваше имя">
+        <input type="email" class="emailZone" placeholder="Введите вашу почту">
+		<input type="where" class="whereZone" placeholder="Откуда">
+        <input type="whom" class="whomZone" placeholder="Кому">
+        <textarea class="messageZone" placeholder="Дополнительная информация"></textarea>
+		<div class="status"></div>
+		<a href="#">
+        <input type="submit" value="Отправить" class="btn"></a>
+      </form>
     </form>
   </div>
   <script src="js/script.js"></script>

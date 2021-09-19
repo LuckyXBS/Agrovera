@@ -1,3 +1,45 @@
-const form=document.querySelector("form"),statusTxt=form.querySelector(".button-area span");form.onsubmit=(e)=>{e.preventDefault();statusTxt.style.color="#0D6EFD";statusTxt.style.display="block";statusTxt.innerText="Sending your message...";form.classList.add("disabled");let xhr=new XMLHttpRequest();xhr.open("POST","message.php",true);xhr.onload=()=>{if(xhr.readyState==4&&xhr.status==200){let response=xhr.response;if(response.indexOf("Email and message field is required!")!=-1||response.indexOf("Enter a valid email address!")!=-1||response.indexOf("Sorry, failed to send your message!")!=-1){statusTxt.style.color="red";}else{form.reset();setTimeout(()=>{statusTxt.style.display="none";},3000);}
-statusTxt.innerText=response;form.classList.remove("disabled");}}
-let formData=new FormData(form);xhr.send(formData);}
+console.log('It works')
+
+$(document).ready(function () {
+	$('submit').click(function (event){
+		event.preventDefault()
+		console.log('Clicked button')
+		
+		var nameZone = $('.nameZone').val()
+		var emailZone = $('.emailZone').val()
+		var whereZone = $('.whereZone').val()
+		var whomZone = $('.whomZone').val()
+		var messageZone = $('.messageZone').val()
+		statusElm.empty()
+		
+		if(emailZone.length > 5 && emailZone.includes('@') && email.includes('.')){
+			statusElm.append('<div>Email is valid</div>')
+		} else{
+			statusElm.append('<div>Email is not valid</div>')
+		}
+		
+		if(nameZone.length > 2){
+			statusElm.append('<div>Name is valid</div>')
+		} else{
+			statusElm.append('<div>Name is not valid</div>')
+		}
+		
+		if(whereZone.length > 2){
+			statusElm.append('<div>Where is valid</div>')
+		} else{
+			statusElm.append('<div>Where is not valid</div>')
+		}
+		
+		if(whomZone.length > 2){
+			statusElm.append('<div>Whom is valid</div>')
+		} else{
+			statusElm.append('<div>Whom is not valid</div>')
+		}
+		
+		if(messageZone.length > 20){
+			statusElm.append('<div>Messgae is valid</div>')
+		} else{
+			statusElm.append('<div>Message is not valid</div>')
+		}
+	})
+})
